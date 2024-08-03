@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
-//this is a middleware that will parse the incoming request body and convert it to JSON
+//this is a middleware that will parse the incoming request body and convert it to JSON;
 
 app.post('/health-checkup', (req, res) => {
     const kidneys = req.body.kidneys;
